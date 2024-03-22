@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import inquirer from "inquirer";
 import chalk from "chalk";
 
@@ -11,7 +13,7 @@ const answers = await inquirer.prompt([
 ]);
 
 if (answers.guessNumber === randomNumber) {
-    console.log("Congratulations! You guess right number.");
+  console.log("Congratulations! You guess right number.");
 } else {
-    console.log(`You guess wrong number\nThe right number is ${randomNumber}.`);
+  console.log(`You guess wrong number.\nThe right number is ${randomNumber}.`);
 }
