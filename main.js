@@ -11,6 +11,9 @@ const answers = await inquirer.prompt([
 if (answers.guessNumber === randomNumber) {
     console.log("Congratulations! You guess right number.");
 }
-else {
-    console.log(`You guess wrong number.\nThe right number is ${randomNumber}.`);
+else if (answers.guessNumber > randomNumber) {
+    console.log("Your guess is high.");
+}
+else if (answers.guessNumber < randomNumber) {
+    console.log("Your guess is low.");
 }
