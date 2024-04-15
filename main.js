@@ -12,8 +12,8 @@ if (answers.guessNumber === randomNumber) {
     console.log("Congratulations! You guess right number.");
 }
 else if (answers.guessNumber > randomNumber) {
-    console.log("Your guess is high.");
+    console.log(`Your guess is high.\nRight guess is ${randomNumber}.`);
 }
 else if (answers.guessNumber < randomNumber) {
-    console.log("Your guess is low.");
+    console.log(`Your guess is low.\nRight guess is ${randomNumber}.`);
 }
